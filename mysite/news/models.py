@@ -14,7 +14,7 @@ class Student(models.Model):
         return self.full_name
 
 class Homework(models.Model):
-    commit_date = models.DateField()
+    commit_date = models.DateField(auto_now=True)
     headline = models.CharField(max_length=200)
     attach = models.FileField()
     remark = models.TextField()
